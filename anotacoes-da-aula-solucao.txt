@@ -1,0 +1,43 @@
+
+# organização do CSS
+- criar um arquivo pra cada elemento
+- e no style css fazer o import, ex.:
+	@import './header.css'
+- criar o global.css para resetar e estilos globais como o body do css
+
+# FLEX
+- COm o Display flex usa padding, margin é normal
+- qnd um elemento n for display flex ele vai tentar ter o tamanho max do conteúdo - Utilize o flex: 1 para eles ficarem no msm tamanho
+- pra colocar um ultimo elemento do FLEX para o final ele usou margin + o flex: 1 diretamento no elemento do meio q indica pra ele crescer o max q ele pode
+e assim jogando o ultimo item no final
+
+# cada sessão foi coolocado
+- usado o max-width 1200px 
+
+# Introdução
+- no figma da pra ver os GRIDs para poder calcular melhor a coluna
+- para quebrar o texto da forma do layout foi usado o <br>
+- add o detalhe usado: url(caminho) no-repeat center; E add no próprio h1
+
+# Experiencia
+- criou fora da main uma section para essa parte
+- section precia do aria-label
+- o subtítulo foi feito no global pois pode ser aproveito no formação
+- usar span para coisas sem sentido claro em vvez de usar o <p>
+- ele usou a data como um pposition absolute para n quebrar a estrutura do FR
+- No subtítulo ele usou o 4ch para limitar o tamanho com max-width (4caracteres 0)
+- colcou max-width em ch tb 40 no caso
+-  o ano ele tiou do fluxo do grid definindo ele como absolute
+- pra tirar a barra pra fora ele usa o with da largura do elemento no left
+- no grid tem como fazer o gap:topebottom lefteright
+- position absolute faz a larguyra do elemento ficar do tamanho do conteúdo, macete foi aumentar o width e fazer o text-align
+- order muda o elemento em relação ao outro q estão todos em 0
+
+# FORMACAO
+- pra colocar um elemento do lado pra 12px por ex. vc tem q somar esse valor com a largura do elemento de 24px por ex é igual então a 36px
+- ele usou dentro do <li> um <span> nas horas e definio o <li> como flex e justify contente com space-between para jogar o span pra pronta
+- o position absolute já coloca o elemento em outra camada, n sendo necessário utilizar o z-index
+
+# Otimizações
+- meta description para melhor SEO
+- na imagem add direto no HTML a metade do tamanho da imagem  (sem PX, somente n°) pra poder ser mais rápido e garantir qualidade, com isso tem q ir no css e colocar o high em auto pra poder funcionar melhor
